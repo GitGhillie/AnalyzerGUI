@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>969</width>
-    <height>535</height>
+    <width>784</width>
+    <height>536</height>
    </rect>
   </property>
   <property name="acceptDrops">
@@ -17,20 +17,52 @@
    <string>Portable Parameter Analyzer GUI dev</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QPushButton" name="pushButton">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_2">
         <property name="text">
-         <string>LoadData</string>
+         <string>PushButton</string>
         </property>
        </widget>
       </item>
-      <item>
-       <layout class="QVBoxLayout" name="graphLayout"/>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
       </item>
      </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QFormLayout" name="formLayout_2"/>
+    </item>
+    <item row="0" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -39,15 +71,14 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>969</width>
-     <height>20</height>
+     <width>784</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTest">
     <property name="title">
      <string>Test</string>
     </property>
-    <addaction name="actionAnother_one"/>
    </widget>
    <addaction name="menuTest"/>
   </widget>
@@ -63,11 +94,6 @@
     <bool>false</bool>
    </attribute>
   </widget>
-  <action name="actionAnother_one">
-   <property name="text">
-    <string>Another one</string>
-   </property>
-  </action>
  </widget>
  <resources/>
  <connections/>
